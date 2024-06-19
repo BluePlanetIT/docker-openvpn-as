@@ -92,7 +92,7 @@ RUN \
 	python3-twisted \
 	python3-webencodings \
 	python3-zope.interface && \
-	rm -rf /var/cache/apt /var/lib/apt/lists
+	rm -rf /var/cache/apt /var/lib/apt/lists && \
  	update-alternatives --set iptables /usr/sbin/iptables-legacy
 
 
