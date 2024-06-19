@@ -93,6 +93,7 @@ RUN \
 	python3-webencodings \
 	python3-zope.interface && \
 	rm -rf /var/cache/apt /var/lib/apt/lists
+ 	update-alternatives --set iptables /usr/sbin/iptables-legacy
 
 
 RUN	echo "**** add openvpn-as repo ****" && \
